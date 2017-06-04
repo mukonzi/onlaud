@@ -1,0 +1,80 @@
+
+		#wrapper{
+
+		  background-color: black;
+		  
+		  color: white;
+		}
+
+		#redpic{
+			
+			color: #fff;
+			background: url( "../img/bg1.jpg");
+			}
+
+
+		nav {
+			background: red;
+		  background:  radial-gradient(red, black);
+		  
+		}
+		#logo{
+			
+			text-align: center;
+		}
+
+
+
+
+
+/* ---- Photo Overlay ---- */
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: rgba(0,0,0, .5);
+}
+
+
+.slide .photo-overlay {
+	opacity: 1;
+	background: #1a863a;
+}
+/* -- Transformations --------- */
+
+.slide .photo-overlay {
+	transition: transform .6s ease-out;
+}
+
+.slide .photo-overlay {
+	transform: translateX(-100%);
+}
+
+.slide:hover .photo-overlay {
+	transform: translateX(0);
+}
+
+
+
+@media screen and (max-width: 480px){
+
+#myNavbar{
+	
+	background:#1a863a;
+}
+
+
+@media screen and (min-width: 480px){
+
+#myNavbar{
+	
+	background: red;
+  background:  radial-gradient(red, black);
+}
+}
